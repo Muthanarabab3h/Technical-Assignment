@@ -5,13 +5,13 @@ using System.Collections;
 
 public class ChipLoader : MonoBehaviour
 {
-    public AssetReference chipPrefabReference; // Addressable reference to the chip GameObject
-    public Transform spawnPoint; // The position where the chip should spawn
-    private Transform[] pathPositions; // Array of waypoints for chip movement
+    public AssetReference chipPrefabReference; // Addressable reference to the chip 
+    public Transform spawnPoint; 
+    private Transform[] pathPositions; 
 
-    private GameObject loadedChip; // Reference to the instantiated chip
-    private int currentPathIndex = 0; // Tracks the chip's position on the path
-    private bool isMoving = false; // Tracks if the chip is currently moving
+    private GameObject loadedChip; 
+    private int currentPathIndex = 0; // Tracks the chip position on the path
+    private bool isMoving = false; 
     public float moveDuration = 0.5f; // Duration of movement between waypoints
 
     private void Start()
@@ -30,11 +30,11 @@ public class ChipLoader : MonoBehaviour
         {
             // Instantiate the loaded chip GameObject at the spawn point
             loadedChip = Instantiate(obj.Result, spawnPoint.position, Quaternion.identity);
-            Debug.Log("Chip GameObject loaded and instantiated successfully.");
+            Debug.Log("Chip loaded successfully");
         }
         else
         {
-            Debug.LogError("Failed to load the chip GameObject.");
+            Debug.LogError("Failed to load the chip");
         }
     }
 
@@ -42,10 +42,9 @@ public class ChipLoader : MonoBehaviour
     public void SetPathPositions(Transform[] waypoints)
     {
         pathPositions = waypoints;
-        currentPathIndex = 0; // Reset to the start of the path
+        currentPathIndex = 0; 
     }
 
-    // Public method to move the chip along the path
     public void MoveChip(int steps, GameManager gameManager)
     {
         if (isMoving || loadedChip == null || pathPositions == null) return;
@@ -71,7 +70,7 @@ public class ChipLoader : MonoBehaviour
             }
             else
             {
-                Debug.Log("You won!"); // Display win message in the console
+                Debug.Log("You won!"); 
                 break;
             }
         }
@@ -108,7 +107,7 @@ public class ChipLoader : MonoBehaviour
         }
     }
 
-    // Optional: Unload the asset when it's no longer needed to free up memory
+   
     private void OnDestroy()
     {
         if (loadedChip != null)

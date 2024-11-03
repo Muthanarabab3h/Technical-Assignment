@@ -39,10 +39,10 @@ public class GameManager : MonoBehaviour
 
     private void RollDice()
     {
-        // Disable the roll button during the animation
+        // Disable both the Roll and Reset buttons during the animation
         SetRollButtonInteractable(false);
+        SetResetButtonInteractable(false);
 
-        // Start the dice rolling animation for 1.5 seconds before determining the result
         StartCoroutine(DiceRollAnimation());
     }
 
@@ -51,16 +51,14 @@ public class GameManager : MonoBehaviour
         float animationDuration = 1.5f; // Duration of the rolling animation
         float elapsedTime = 0f;
 
-        // Randomly cycle through the dice faces for 1.5 seconds
         while (elapsedTime < animationDuration)
         {
             int randomIndex = UnityEngine.Random.Range(0, diceSprites.Length);
             diceImage.sprite = diceSprites[randomIndex];
-            yield return new WaitForSeconds(0.1f); // Adjust speed for quick changes
+            yield return new WaitForSeconds(0.1f); 
             elapsedTime += 0.1f;
         }
 
-        // Determine the final roll result after the animation
         lastRoll = UnityEngine.Random.Range(1, 7); // Roll a random number between 1 and 6
         resultText.text = lastRoll.ToString();
         UpdateDiceImage(lastRoll);
@@ -84,7 +82,7 @@ public class GameManager : MonoBehaviour
         // Reset the chip position to the start
         if (chipLoader != null)
         {
-            chipLoader.ResetChipPosition(); // Call ResetChipPosition to immediately move to the first waypoint
+            chipLoader.ResetChipPosition(); 
         }
     }
 
@@ -95,7 +93,8 @@ public class GameManager : MonoBehaviour
             diceImage.sprite = diceSprites[number - 1];
         }
 
-        // Re-enable the Roll button after the final roll result is shown
+        // Re-enable the Roll and Reset buttons after the final roll result is shown
         SetRollButtonInteractable(true);
+        SetResetButtonInteractable(true);
     }
 }
