@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7d770aff6b301a042b9ab9e29e90905e
+  m_SerializeEntries:
+  - m_GUID: 4304329a0c06a1c43975ed013f706d66
+    m_Address: Assets/Sprites/Dice 1.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d11e7e28516bcf844b9ad42558a093a0
+    m_Address: Assets/Sprites/Dice 2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0c4621ad80da1844943982447155869
+    m_Address: Assets/Sprites/Dice 3.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5801f5f9608203d4982cbf6641ae8dc3
+    m_Address: Assets/Sprites/Dice 4.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2043ddb31df4ccd4d942662cb21fb9f3
+    m_Address: Assets/Sprites/Dice 5.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e783b0dd92c54949b734f06939240c5
+    m_Address: Assets/Sprites/Dice 6.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db751f955f8a63d488d3cbab87790ab9
+    m_Address: Assets/Sprites/Chip.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7843bdcfcad4c8428cbac202fd80c75
+    m_Address: Assets/Prefabs/Circle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61e15b7c900a29441b3b308cdc6d9de3
+    m_Address: Assets/Sprites/Chip2.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0f11dc36ff9d51340b12a33b36379f44, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 71b6102b204e1e645ae527c88b24a988, type: 2}
+    - {fileID: 11400000, guid: eea83ca3ffc5e0e42a78e4cc9c0bc05c, type: 2}
